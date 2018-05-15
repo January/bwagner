@@ -1,0 +1,18 @@
+ fun main(args: Array<String>) {
+        println("Student Information")
+        println("------------------------------")
+        println("John Wayne")
+        println("4005 Main Street")
+        println("Denton, Tx 76201")
+        println("940-382-5000")
+        println("Junior")
+        println()
+        println("Parent or Guardian Information")
+        println("--------------------------------")
+        println("Martha Wayne")
+        println("4005 Main Street")
+        println("Denton, Tx 76201")
+        println("940-382-5000")
+        println("940-387-1515")
+        println("Denton ISD")
+    }
