@@ -1,0 +1,8 @@
+(write-line "          Simple Math")
+(write-line "-------------------------------")
+(format t "~D + ~D = ~D~C" 5 10 (+ 5 10) #\linefeed)
+(format t "~D / ~D = ~D~C" 30 5 (/ 30 5) #\linefeed)
+(format t "~D + ~D - ~D * ~D = ~D~C" 50 20 6 3 (+ 50 (- 20 (* 6 3))) #\linefeed)
+(format t "~D / (~D + ~D) * ~D = ~D~C" 40 3 5 2 (* (/ 40 (+ 3 5)) 2) #\linefeed)
+(format t "Jack had ~D pencils and Jill had ~D.~C" 3 5 #\linefeed)
+(format t "Jack and Jill had ~D pencils.~C" (+ 3 5) #\linefeed)
