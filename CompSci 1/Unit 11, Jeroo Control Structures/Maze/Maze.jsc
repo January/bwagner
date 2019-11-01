@@ -1,0 +1,30 @@
+@Java
+method run () {
+while (!isWater(AHEAD)) {
+   hop();
+}
+turn(RIGHT);
+while (!isFlower(AHEAD)) {
+   if (isClear(LEFT)) {
+      turn(LEFT);
+      hop();
+      if (isClear(AHEAD)) {
+         hop(11);
+      }
+      else {
+      turn(RIGHT);}
+   }
+   if (isWater(AHEAD)) {
+      turn(RIGHT);
+      hop();
+      turn(LEFT);
+   }
+   hop();
+}
+}
+@@
+method main() {
+   Jeroo henry = new Jeroo (0,0);
+   henry.run();
+   
+}

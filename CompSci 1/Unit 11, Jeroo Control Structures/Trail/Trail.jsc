@@ -1,0 +1,28 @@
+@Java
+
+@@
+method main () {
+   Jeroo jared = new Jeroo(0,0, 100);
+   while (!jared.isWater(AHEAD)) {
+      if (jared.isClear(RIGHT)) {
+         jared.turn(RIGHT);
+      }
+      if (jared.isClear(LEFT)) {
+         jared.turn(LEFT);
+      }
+      if (jared.isNet(AHEAD)) {
+         jared.toss();
+         
+      }
+      if (jared.isNet(LEFT)) {
+         jared.turn(LEFT);
+         jared.toss();
+      }
+      if (jared.isNet(RIGHT)) {
+         jared.turn(RIGHT);
+         jared.toss();
+      }
+      jared.hop();
+   }
+
+}

@@ -1,0 +1,22 @@
+@Java
+method walk() {
+   while(!isFlower(AHEAD)) {
+      if (!isClear(RIGHT)) {
+         hop();
+      }
+      if (isClear(RIGHT)) {
+         turn(RIGHT);
+         hop();
+      }
+      if (isWater(AHEAD) && isWater(RIGHT)) {
+         turn(LEFT);
+      }
+   }
+
+}
+@@
+method main () {
+   Jeroo henry = new Jeroo(12,2,NORTH, 1);
+   henry.plant();
+   henry.walk();
+}

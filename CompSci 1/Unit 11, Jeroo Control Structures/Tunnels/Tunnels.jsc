@@ -1,0 +1,24 @@
+@Java
+method run () {
+   while (!isFlower(AHEAD)) {
+      if (isClear(RIGHT)) {
+         turn(RIGHT);
+         hop();
+      }
+      if (isClear(LEFT) && !isClear(AHEAD)) {
+         turn(LEFT);
+         
+      }
+      if (!isClear(AHEAD) && !isClear(LEFT) && !isClear(RIGHT)) {
+         turn(LEFT);
+         turn(LEFT);
+      
+      }
+      hop();
+   }
+}
+@@
+method main () {
+   Jeroo sam = new Jeroo(0,0);
+   sam.run();
+}

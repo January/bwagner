@@ -1,0 +1,33 @@
+@Java
+method run() {
+   hop();
+   hop();
+   hop();
+   turn(LEFT);
+   hop();
+   hop();
+   hop();
+   hop();
+   pick();
+   turn(RIGHT);
+   hop();
+   turn(LEFT);
+   hop();
+   toss();
+   hop();
+   hop();
+   hop();
+   hop();
+   turn(LEFT);
+   hop();
+   hop();
+   hop();
+
+}
+@@
+method main() {
+   Jeroo shaswat = new Jeroo(0,0,SOUTH);
+   shaswat.run();
+   
+   
+}

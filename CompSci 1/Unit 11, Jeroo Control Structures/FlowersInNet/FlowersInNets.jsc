@@ -1,0 +1,28 @@
+@Java
+method turnAround() {
+   turn(RIGHT);   
+   turn(RIGHT);   
+   hop(); 
+   turn(LEFT); 
+}
+@@
+method main() {
+   Jeroo henry = new Jeroo(5,0,EAST, 10);
+   while(!henry.isWater(AHEAD)){
+      if(henry.isClear(LEFT)) {
+         henry.turn(LEFT);
+         henry.hop();
+         if (!henry.isClear(AHEAD) && !henry.isClear(LEFT) && !henry.isClear(RIGHT)) {
+            henry.plant();   
+            henry.turnAround();
+         }
+         else {
+            henry.turnAround();
+            henry.hop();
+         }
+      }
+      else {
+         henry.hop();
+      }
+   }
+}
