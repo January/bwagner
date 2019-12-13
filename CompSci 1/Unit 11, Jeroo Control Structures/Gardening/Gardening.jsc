@@ -1,0 +1,14 @@
+@Java
+
+@@
+method main() {
+   Jeroo henry = new Jeroo(0,0,EAST,575);
+   while (henry.hasFlower()) {
+      henry.plant();
+      henry.hop();
+      if (henry.isFlower(AHEAD) || henry.isWater(AHEAD)) {
+         henry.turn(RIGHT);
+      }
+   }
+
+}

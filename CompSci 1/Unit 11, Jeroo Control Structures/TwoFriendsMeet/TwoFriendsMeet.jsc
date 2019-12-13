@@ -1,0 +1,33 @@
+@Java
+method plantAndHop() {
+   plant();
+   hop();
+   
+}
+@@
+method main () {
+   Jeroo stepbro = new Jeroo(0,0,EAST,90);
+   Jeroo stepsis = new Jeroo(0,23,WEST,90);
+   stepsis.plant();
+   stepbro.plant();
+   while (!stepbro.isFacing(NORTH)) {
+      if (stepbro.isJeroo(AHEAD)) {
+         stepbro.turn(RIGHT);
+         stepsis.turn(LEFT);
+      }
+      if (stepbro.isWater(AHEAD)) {
+         stepbro.turn(RIGHT);
+         stepsis.turn(LEFT);
+      }
+      stepbro.plantAndHop();
+      stepsis.plantAndHop();
+      
+   }
+  stepsis.hop();
+  stepsis.hop();
+  stepbro.hop();
+  stepbro.hop();
+     
+   
+
+}

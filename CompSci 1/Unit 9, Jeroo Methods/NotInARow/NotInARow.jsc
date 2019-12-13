@@ -1,0 +1,25 @@
+@Java
+method nextFlower() {
+   hop();
+   turn(LEFT);
+   hop();
+   pick();
+   turn(RIGHT);
+   turn(RIGHT);
+   hop();
+   turn(LEFT);
+   plant();
+   hop();
+   
+
+}
+@@
+method main () {
+   Jeroo henry = new Jeroo(2,0);
+   henry.nextFlower();
+   henry.nextFlower();
+   henry.nextFlower();
+   henry.nextFlower();
+   henry.nextFlower();
+   henry.nextFlower();
+}

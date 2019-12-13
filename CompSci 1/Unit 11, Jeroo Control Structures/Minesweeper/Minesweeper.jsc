@@ -1,0 +1,23 @@
+@Java
+
+@@
+method main() {
+   Jeroo tim = new Jeroo(10,0, EAST, 50);
+   while (!tim.isWater(AHEAD)) {
+      
+      if (tim.isNet(AHEAD)) {
+         tim.toss();
+         tim.hop();
+         tim.plant();
+         
+      }
+      else {tim.hop();}
+      
+      
+      
+      
+   }
+   
+   
+
+}

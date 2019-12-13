@@ -1,0 +1,41 @@
+@Java
+method bigHop() {
+   hop();
+   hop();
+   hop();
+   hop();
+}
+@@
+method main() {
+Jeroo henry = new Jeroo(7,8,SOUTH,4);
+
+henry.plant();
+henry.turn(RIGHT);
+henry.hop();
+henry.turn(LEFT);
+henry.bigHop();
+henry.bigHop();
+henry.turn(LEFT);
+henry.hop();
+henry.plant();
+henry.turn(RIGHT);
+henry.hop();
+henry.turn(LEFT);
+henry.bigHop();
+henry.hop();
+henry.hop();
+henry.hop();
+henry.turn(LEFT);
+henry.hop();
+henry.plant();
+henry.turn(RIGHT);
+henry.hop();
+henry.turn(LEFT);
+henry.bigHop();
+henry.bigHop();
+henry.turn(LEFT);
+henry.hop();
+henry.plant();
+
+
+}

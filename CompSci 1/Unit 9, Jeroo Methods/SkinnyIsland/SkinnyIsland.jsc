@@ -1,0 +1,22 @@
+@Java
+method disableNet()
+{
+   pick();
+   toss();
+}
+@@
+method main()
+{ 
+   Jeroo bob = new Jeroo();
+   
+   bob.hop(3);
+   bob.disableNet();
+   
+   bob.hop(8);
+   bob.disableNet();
+   
+   bob.hop(8);
+   bob.disableNet();
+   
+   bob.hop(4);
+}

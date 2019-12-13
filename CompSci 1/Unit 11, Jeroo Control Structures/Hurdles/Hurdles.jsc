@@ -1,0 +1,22 @@
+@Java
+
+@@
+method main() {
+   Jeroo shaswat = new Jeroo(23,0,EAST);
+   while(!shaswat.hasFlower()) {
+      if(shaswat.isNet(AHEAD)) {
+         shaswat.turn(LEFT);
+      }
+      if (shaswat.isClear(RIGHT)) {
+         shaswat.turn(RIGHT);
+         shaswat.hop();
+      }
+      if (shaswat.isWater(AHEAD)) {
+         shaswat.turn(LEFT);
+      }
+      if (shaswat.isFlower(HERE)) {
+         shaswat.pick();
+      }
+      else {shaswat.hop();}
+   }
+}

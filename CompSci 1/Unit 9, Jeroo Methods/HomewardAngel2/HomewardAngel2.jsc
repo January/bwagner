@@ -1,0 +1,35 @@
+@Java
+method getFlower()
+{
+   turn(RIGHT);
+hop(3);
+turn(LEFT);
+hop(4);
+}
+
+method pickAndToss()
+{
+   pick();
+turn(RIGHT);
+hop();
+turn(LEFT);
+hop();
+toss();
+  
+}
+
+method enterHouse()
+{hop(4);
+turn(LEFT);
+hop(3);
+}
+@@
+method main()
+{
+   Jeroo angel = new Jeroo();
+   angel.getFlower(); 
+   angel.pickAndToss(); 
+   angel.enterHouse();
+
+
+}

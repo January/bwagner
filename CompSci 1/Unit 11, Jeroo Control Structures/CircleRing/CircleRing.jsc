@@ -1,0 +1,18 @@
+@Java
+
+@@
+method main() {
+   Jeroo Natalie = new Jeroo(0,0,EAST);
+   while (!Natalie.isFacing(NORTH) || !Natalie.isWater(AHEAD)) {
+      if (Natalie.isFlower(HERE)) {
+         Natalie.pick();
+      }
+      if (Natalie.isWater(AHEAD)) {
+         Natalie.turn(RIGHT);
+      }
+      Natalie.hop();
+   
+   }
+
+
+}

@@ -1,0 +1,32 @@
+@Java
+method run () {
+while (!isJeroo(AHEAD)) {
+   if (isClear(AHEAD)) {
+   
+   }
+   if (!isNet(LEFT) && isNet(RIGHT)) {
+      turn(LEFT);
+   }
+   if(isNet(AHEAD) && isNet(LEFT) && isNet(RIGHT)) {
+      turn(LEFT);
+      turn(LEFT);
+   }
+   if (isNet(AHEAD) && !isNet(LEFT)) {
+      turn(LEFT);
+   }
+   if (isNet(AHEAD) && !isNet(RIGHT)) {
+      turn(RIGHT);
+   }
+   plant();
+   hop();
+   
+}
+
+}
+@@
+method main() {
+   Jeroo henry = new Jeroo (1,0, EAST, 1000);
+   Jeroo treasure = new Jeroo(12,12);
+   henry.run();
+   
+}
