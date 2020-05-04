@@ -1,0 +1,12 @@
+@Java
+
+@@
+method main() {
+   Jeroo bill = new Jeroo();
+   while (bill.isFlower(AHEAD)) {
+      bill.hop();
+      bill.pick();
+   
+   }
+   
+}

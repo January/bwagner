@@ -1,0 +1,27 @@
+@Java
+method run() {
+   hop(6);
+   turn(RIGHT);
+   hop(3);
+   turn(LEFT);
+   hop(2);
+   turn(LEFT);
+   hop(3);
+   turn(RIGHT);
+   hop(3);
+   toss();
+   hop(11);
+   give(AHEAD);
+}
+@@
+method main () {
+   Jeroo henry = new Jeroo(0,0, EAST,2);
+   Jeroo shaswat = new Jeroo(23,0, NORTH, 1);
+   Jeroo jaden = new Jeroo(23,23 , WEST, 1);
+   Jeroo minh = new Jeroo (0,23, SOUTH, 1);
+   henry.run();
+   minh.run();
+   jaden.run();
+   shaswat.run();
+   shaswat.hop();
+}

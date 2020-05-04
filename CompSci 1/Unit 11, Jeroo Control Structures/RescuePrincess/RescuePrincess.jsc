@@ -1,0 +1,21 @@
+@Java
+method run() {
+   while(!isJeroo(AHEAD)) {
+      hop();
+      if (isClear(RIGHT)) {
+         turn(RIGHT);
+      }
+      else if (isClear(LEFT)) {
+         turn(LEFT);
+      }
+   }
+}
+@@
+method main () {
+   Jeroo sam = new Jeroo(0,0, EAST);
+   Jeroo kira = new Jeroo(9,14, SOUTH);
+   
+   sam.run();
+
+
+}

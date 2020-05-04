@@ -1,0 +1,86 @@
+@Java
+
+@@
+method main() {
+
+ Jeroo jaden = new Jeroo(8, 2, NORTH, 13);
+ Jeroo zoe = new Jeroo(4, 10, WEST, 13);
+
+
+ zoe.plant();
+ zoe.hop();
+ zoe.plant();
+ zoe.hop();
+ zoe.plant();
+ zoe.turn(LEFT);
+ zoe.hop();
+ zoe.plant();
+ zoe.hop();
+ zoe.plant();
+ zoe.hop();
+ zoe.plant();
+ zoe.hop();
+ zoe.plant();
+ zoe.turn(LEFT);
+ zoe.hop();
+ zoe.plant();
+ zoe.hop();
+ zoe.plant();
+ zoe.turn(LEFT);
+ zoe.hop();
+ zoe.hop();
+ zoe.plant();
+ zoe.hop();
+ zoe.hop();
+ zoe.turn(LEFT);
+ zoe.plant();
+ zoe.hop();
+ zoe.plant();
+ zoe.turn(LEFT);
+ zoe.hop();
+ zoe.hop();
+ zoe.plant();
+
+ jaden.plant();
+ jaden.hop();
+ jaden.plant();
+ jaden.hop();
+ jaden.plant();
+ jaden.hop();
+ jaden.plant();
+ jaden.hop();
+ jaden.plant();
+ jaden.turn(RIGHT);
+ jaden.turn(RIGHT);
+ jaden.hop();
+ jaden.turn(LEFT);
+ jaden.hop();
+ jaden.plant();
+ jaden.hop();
+ jaden.turn(RIGHT);
+ jaden.hop();
+ jaden.plant();
+ jaden.turn(LEFT);
+ jaden.turn(LEFT);
+ jaden.hop();
+ jaden.turn(RIGHT);
+ jaden.hop();
+ jaden.plant();
+ jaden.turn(LEFT);
+ jaden.hop();
+ jaden.turn(RIGHT);
+ jaden.hop();
+ jaden.plant();
+ jaden.turn(RIGHT);
+ jaden.hop();
+ jaden.plant();
+ jaden.hop();
+ jaden.plant();
+ jaden.hop();
+ jaden.plant();
+ jaden.hop();
+ jaden.plant();
+
+
+
+}

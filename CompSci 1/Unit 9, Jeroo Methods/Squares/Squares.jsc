@@ -1,0 +1,51 @@
+@Java
+method makeSquare() {
+   plant();
+   hop();
+   plant();
+   hop();
+   plant();
+   turn(RIGHT);
+   hop();
+   turn(RIGHT);
+   plant();
+   hop();
+   plant();
+   hop();
+   plant();
+   turn(LEFT);
+   hop();
+   plant();
+   turn(LEFT);
+   hop();
+   plant();
+   hop();
+   plant();
+   turn(LEFT);
+   hop();
+   hop();
+   turn(RIGHT);
+}
+@@
+method main() {
+   Jeroo jim = new Jeroo(2,3,27);
+   Jeroo joe = new Jeroo(9,3,27);
+   Jeroo john = new Jeroo(16,3,27);
+   jim.makeSquare();
+   jim.hop(5);
+   jim.makeSquare();
+   jim.hop(5);
+   jim.makeSquare();
+   
+   joe.makeSquare();
+   joe.hop(5);
+   joe.makeSquare();
+   joe.hop(5);
+   joe.makeSquare();
+   
+   john.makeSquare();
+   john.hop(5);
+   john.makeSquare();
+   john.hop(5);
+   john.makeSquare();
+}
